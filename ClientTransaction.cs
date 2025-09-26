@@ -244,7 +244,7 @@ public class ClientTransaction
         return animationKey;
     }
 
-    public async Task<string> GenerateTransactionIdAsync(
+    public string GenerateTransactionId(
         string method,
         string path,
         HtmlDocument? response = null,

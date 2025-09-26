@@ -33,7 +33,7 @@ class Program
             await transaction.InitializeAsync();
 
             // Generate a transaction ID for the provided URL
-            string transactionId = await transaction.GenerateTransactionIdAsync(
+            string transactionId = transaction.GenerateTransactionId(
                 "POST", // HTTP method
                 url     // API path from command line
             );
